@@ -4,6 +4,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@main
+        with:
+          fetch-depth: 0
       - uses: qwertycxz/setup-cim@7c20746d99fe17535118b7d0edd6a75c0ab268a8
       - uses: xmake-io/github-action-setup-xmake@3a1a5dddfc7fa625d9a698738334bf55655a861a
         with:
