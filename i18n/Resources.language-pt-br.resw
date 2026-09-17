@@ -24,7 +24,7 @@
 		<value>Somente arquivos e mesmo volume</value>
 	</data>
 	<data name='DirectoryJunction.GetTitle' xml:space='preserve'>
-		<value>Junção de pasta</value>
+		<value>Link de junção</value>
 	</data>
 	<data name='DirectoryJunction.GetToolTip' xml:space='preserve'>
 		<value>Somente diretórios e mesmo computador</value>

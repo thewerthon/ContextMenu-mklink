@@ -472,10 +472,10 @@ struct Enum : implements<Enum, IEnumExplorerCommand> {
 					result = make<RelativeSymbolicLink>(directory, target)->QueryInterface(fetched + pUICommand);
 					break;
 				case 2:
-					result = make<HardLink>(directory, target)->QueryInterface(fetched + pUICommand);
+					result = make<DirectoryJunction>(directory, target)->QueryInterface(fetched + pUICommand);
 					break;
 				case 3:
-					result = make<DirectoryJunction>(directory, target)->QueryInterface(fetched + pUICommand);
+					result = make<HardLink>(directory, target)->QueryInterface(fetched + pUICommand);
 					break;
 				case 4:
 					result = make<InternetShortcut>(directory, target)->QueryInterface(fetched + pUICommand);
